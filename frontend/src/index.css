@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        --background: 0.98 0.01 264;
+        --foreground: 0.145 0.02 264;
+        --card: 1 0 0;
+        --card-foreground: 0.145 0.02 264;
+        --popover: 1 0 0;
+        --popover-foreground: 0.145 0.02 264;
+        --primary: 0.55 0.22 264;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.65 0.18 320;
+        --secondary-foreground: 0.99 0 0;
+        --muted: 0.96 0.01 264;
+        --muted-foreground: 0.50 0.02 264;
+        --accent: 0.70 0.20 200;
+        --accent-foreground: 0.99 0 0;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.92 0.01 264;
+        --input: 0.92 0.01 264;
+        --ring: 0.55 0.22 264;
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+        --sidebar: 0.985 0 0;
+        --sidebar-foreground: 0.145 0 0;
+        --sidebar-primary: 0.205 0 0;
+        --sidebar-primary-foreground: 0.985 0 0;
+        --sidebar-accent: 0.97 0 0;
+        --sidebar-accent-foreground: 0.205 0 0;
+        --sidebar-border: 0.922 0 0;
+        --sidebar-ring: 0.708 0 0;
+        
+        /* Custom color boxes */
+        --box-red: 0.55 0.22 25;
+        --box-blue: 0.50 0.20 250;
+        --box-green: 0.60 0.18 145;
+        --box-yellow: 0.75 0.18 90;
+        --box-purple: 0.55 0.20 300;
+    }
+
+    .dark {
+        --background: 0.145 0.02 264;
+        --foreground: 0.985 0.01 264;
+        --card: 0.20 0.02 264;
+        --card-foreground: 0.985 0.01 264;
+        --popover: 0.20 0.02 264;
+        --popover-foreground: 0.985 0.01 264;
+        --primary: 0.70 0.22 264;
+        --primary-foreground: 0.145 0.02 264;
+        --secondary: 0.75 0.18 320;
+        --secondary-foreground: 0.145 0.02 264;
+        --muted: 0.25 0.02 264;
+        --muted-foreground: 0.65 0.02 264;
+        --accent: 0.75 0.20 200;
+        --accent-foreground: 0.145 0.02 264;
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.30 0.02 264;
+        --input: 0.30 0.02 264;
+        --ring: 0.70 0.22 264;
+        --chart-1: 0.488 0.243 264.376;
+        --chart-2: 0.696 0.17 162.48;
+        --chart-3: 0.769 0.188 70.08;
+        --chart-4: 0.627 0.265 303.9;
+        --chart-5: 0.645 0.246 16.439;
+        --sidebar: 0.205 0 0;
+        --sidebar-foreground: 0.985 0 0;
+        --sidebar-primary: 0.488 0.243 264.376;
+        --sidebar-primary-foreground: 0.985 0 0;
+        --sidebar-accent: 0.269 0 0;
+        --sidebar-accent-foreground: 0.985 0 0;
+        --sidebar-border: 1 0 0 / 10%;
+        --sidebar-ring: 0.439 0 0;
+        
+        /* Custom color boxes - adjusted for dark mode */
+        --box-red: 0.60 0.24 25;
+        --box-blue: 0.55 0.22 250;
+        --box-green: 0.65 0.20 145;
+        --box-yellow: 0.80 0.20 90;
+        --box-purple: 0.60 0.22 300;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    .box-red {
+        background: linear-gradient(135deg, oklch(var(--box-red)) 0%, oklch(0.50 0.20 20) 100%);
+    }
+    
+    .box-blue {
+        background: linear-gradient(135deg, oklch(var(--box-blue)) 0%, oklch(0.45 0.18 245) 100%);
+    }
+    
+    .box-green {
+        background: linear-gradient(135deg, oklch(var(--box-green)) 0%, oklch(0.55 0.16 140) 100%);
+    }
+    
+    .box-yellow {
+        background: linear-gradient(135deg, oklch(var(--box-yellow)) 0%, oklch(0.70 0.16 85) 100%);
+    }
+    
+    .box-purple {
+        background: linear-gradient(135deg, oklch(var(--box-purple)) 0%, oklch(0.50 0.18 295) 100%);
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the header, hero section with \"Hello World\" heading, color boxes, and footer in a full-height flex layout.",
+  "frontend/src/components/Header.tsx": "Simple header component displaying the app title with a semi-transparent backdrop and border.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright notice, animated heart icon, and link to caffeine.ai.",
+  "frontend/src/components/ColorBoxes.tsx": "Component that renders five colorful rectangular boxes (red, blue, green, yellow, purple) in a responsive grid with hover effects and staggered animations.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for fetching greeting text from the backend with fallback to \"Hello World\".",
+  "frontend/src/index.css": "Global styles with OKLCH color system for light/dark modes, custom color box gradients, and utility classes for the five colored boxes."
+}
